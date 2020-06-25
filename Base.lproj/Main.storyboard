@@ -73,15 +73,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yqn-Ee-vYO">
-                                <rect key="frame" x="10" y="76" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="76" width="394" height="414"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDj-6S-juM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="clP-a0-LxK">
-                                        <rect key="frame" x="47" y="42" width="320" height="320"/>
+                                        <rect key="frame" x="37" y="42" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="clP-a0-LxK" secondAttribute="height" multiplier="1:1" id="3hN-GB-ejF"/>
@@ -91,27 +91,40 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CDs-zV-Ump" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="81" y="370" width="252" height="44"/>
+                                        <rect key="frame" x="71" y="370" width="252" height="44"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="iDj-6S-juM" firstAttribute="leading" secondItem="yqn-Ee-vYO" secondAttribute="leading" id="1KG-Pz-JVJ"/>
                                     <constraint firstAttribute="trailing" secondItem="iDj-6S-juM" secondAttribute="trailing" constant="10" id="3bm-VE-j8x"/>
+                                    <constraint firstAttribute="trailing" secondItem="iDj-6S-juM" secondAttribute="trailing" id="EKw-xI-nIl"/>
                                     <constraint firstAttribute="trailing" secondItem="iDj-6S-juM" secondAttribute="trailing" id="GNO-V1-OWw"/>
+                                    <constraint firstAttribute="trailing" secondItem="iDj-6S-juM" secondAttribute="trailing" id="HWn-Tz-GCl"/>
+                                    <constraint firstItem="iDj-6S-juM" firstAttribute="leading" secondItem="yqn-Ee-vYO" secondAttribute="leading" id="Lnb-fH-dCf"/>
+                                    <constraint firstAttribute="trailing" secondItem="iDj-6S-juM" secondAttribute="trailing" constant="10" id="djc-Ox-Tcb"/>
+                                    <constraint firstItem="iDj-6S-juM" firstAttribute="top" secondItem="yqn-Ee-vYO" secondAttribute="top" id="gd2-B4-2TQ"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ez-XR-8AB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yqn-Ee-vYO" secondAttribute="trailing" id="6Wh-rJ-3fz"/>
+                            <constraint firstItem="yqn-Ee-vYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="BZP-W5-ml9"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DZZ-6D-zFS"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hsd-AW-rR2"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OGK-Gp-Lhg"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="UaO-yt-qgV"/>
+                            <constraint firstAttribute="trailing" secondItem="yqn-Ee-vYO" secondAttribute="trailing" id="ccq-VT-fOw"/>
+                            <constraint firstAttribute="trailing" secondItem="yqn-Ee-vYO" secondAttribute="trailing" id="lPM-hM-W0F"/>
+                            <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nMr-uw-799"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="orW-kp-Ghh"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="qbv-gZ-Sck"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sEt-aS-ben"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ty7-6n-8gj"/>
                             <constraint firstAttribute="trailing" secondItem="yqn-Ee-vYO" secondAttribute="trailing" id="ubk-7g-jIx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yqn-Ee-vYO" secondAttribute="trailing" id="yAE-uF-fX3"/>
+                            <constraint firstItem="yqn-Ee-vYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yJf-Pz-CD9"/>
                             <constraint firstItem="yqn-Ee-vYO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="zWz-3p-U6e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -122,7 +135,11 @@
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="VjY-dp-3VX"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HXI-my-eJz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HXI-my-eJz">
+                            <connections>
+                                <segue destination="G6m-pi-wFX" kind="unwind" unwindAction="unwindToMealListWithSender:" id="Gow-Dj-6J2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="iDj-6S-juM" id="WI7-uN-K0l"/>
@@ -132,6 +149,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="G6m-pi-wFX" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="U28-vU-s0M">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="q9e-Z7-VcQ"/>
