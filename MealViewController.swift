@@ -16,8 +16,10 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var appInfoButton: UIButton!
     
     /*
+     
     This value is either passed by `MealTableViewController` in `prepare(for:sender:)`
     or constructed as part of adding a new meal.
     */
@@ -108,11 +110,54 @@ class MealViewController: UIViewController, UITextFieldDelegate,
         present(imagePickerController, animated: true, completion: nil )
     }
     
+    // Called when the Get App Info button is pressed
+    @IBAction func appInfoButtonPressed(_ sender: UIButton) {
+        print("This is a test of the button")
+        
+        // Display an alert showing the app information
+        let alertController = UIAlertController(title: "Test Alert",
+                                                message: "This is an alert!", preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "You know it!", style: .default))
+        present(alertController, animated: true, completion: nil)
+                
+        httpTest()
+    }
+    
     // MARK: Private methods
     private func updateSaveButtonState() {
         // Disable the save button if the text field is empty
         let text = nameTextField.text ?? ""
         saveButton.isEnabled = !text.isEmpty
+    }
+    
+    // A simple FizzBuzz implementation in Swift
+    private func fizzBuzz() {
+        for number in 1...100 {
+            if number % 3 == 0 && number % 5 == 0 {
+                print("FizzBuzz")
+            } else if number % 3 == 0{
+                print("Fizz")
+            } else if number % 5 == 0 {
+                print("Buzz")
+            } else {
+                print(number)
+            }
+        }
+    }
+    
+    // Create a simple HTTP request
+    private func httpTest() {
+        let url = URL(string: "https://www.stackoverflow.com")!
+        
+        let task = URLSession.shared.dataTask(with: url) {
+            (data, response, error) in guard let data = data else {
+                return
+            }
+            print(String(data: data, encoding: .utf8))
+        }
+        
+        task.resume()
     }
 }
 
