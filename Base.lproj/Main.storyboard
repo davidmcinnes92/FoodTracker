@@ -44,6 +44,7 @@
                                     <outlet property="nameLabel" destination="QfP-rW-w6N" id="R8z-qZ-v49"/>
                                     <outlet property="photoImageView" destination="8mP-Ru-T4t" id="RDy-QY-g2N"/>
                                     <outlet property="ratingControl" destination="NwM-zz-gk6" id="v4C-bm-CKs"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="KgN-A2-Av3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,11 +70,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yqn-Ee-vYO">
-                                <rect key="frame" x="0.0" y="76" width="424" height="414"/>
+                                <rect key="frame" x="0.0" y="108" width="424" height="414"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDj-6S-juM">
                                         <rect key="frame" x="0.0" y="0.0" width="424" height="34"/>
@@ -106,7 +107,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-CK-iti">
-                                <rect key="frame" x="158" y="504" width="109" height="30"/>
+                                <rect key="frame" x="153" y="530" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get App Info"/>
                                 <connections>
@@ -201,9 +202,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJX-3A-GTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1135" y="565"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KgN-A2-Av3"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
